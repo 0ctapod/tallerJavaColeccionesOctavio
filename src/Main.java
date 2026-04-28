@@ -3,19 +3,19 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> tareas = new ArrayList<>();
+
         ListaDeTareas tareasDeOctavio = new ListaDeTareas();
 
-        tareasDeOctavio.agregarTarea(tareas, "Estudiar Java");
-        tareasDeOctavio.agregarTarea(tareas, "ir al gimnasio");
-        tareasDeOctavio.agregarTarea(tareas, "Repasar ArrayList");
+        tareasDeOctavio.agregarTarea("Estudiar Java");
+        tareasDeOctavio.agregarTarea("ir al gimnasio");
+        tareasDeOctavio.agregarTarea("Repasar ArrayList");
 
-        tareasDeOctavio.mostrarTareas(tareas);
+        tareasDeOctavio.mostrarTareas();
 
-        tareasDeOctavio.completarTarea(tareas, 1);
+        tareasDeOctavio.completarTarea(0);
 
-        tareasDeOctavio.mostrarTareas(tareas);
-        tareasDeOctavio.mostrarTotalPendientes(tareas);
+        tareasDeOctavio.mostrarTareas();
+        tareasDeOctavio.mostrarTotalPendientes();
 
     }
 }
